@@ -199,6 +199,7 @@ const personalizationSectionLayoutStyles = css({
   gridTemplateAreas: `
     'name-input color-input'
     'favorite-marker favorite-marker'
+    'live-marker live-marker'
   `,
   gap: spacing[600],
   marginBottom: spacing[600],
@@ -214,6 +215,10 @@ const personalizationColorInputStyles = css({
 
 const personalizationFavoriteMarkerStyles = css({
   gridArea: 'favorite-marker',
+});
+
+const personalizationLiveMarkerStyles = css({
+  gridArea: 'live-marker',
 });
 
 type ConnectionPersonalizationFormProps = {
@@ -256,6 +261,17 @@ function ConnectionPersonalizationForm({
         type: 'update-connection-personalization',
         ...personalizationOptions,
         isFavorite: ev.target.checked,
+      });
+    },
+    [updateConnectionFormField, personalizationOptions]
+  );
+
+  const onChangeLiveMode = useCallback(
+    (ev: React.ChangeEvent<HTMLInputElement>) => {
+      updateConnectionFormField({
+        type: 'update-connection-personalization',
+        ...personalizationOptions,
+        isLive: ev.target.checked,
       });
     },
     [updateConnectionFormField, personalizationOptions]
@@ -310,6 +326,14 @@ function ConnectionPersonalizationForm({
         connections"
         />
       )}
+      <Checkbox
+        className={personalizationLiveMarkerStyles}
+        onChange={onChangeLiveMode}
+        data-testid="personalization-favorite-checkbox"
+        checked={personalizationOptions.isLive}
+        label={<b>LIVE Mode</b>}
+        description='Mark a connection as "Live Mode" to confirm every access.'
+      />
     </div>
   );
 }
@@ -414,6 +438,7 @@ function ConnectionForm({
       savedConnectionType: personalizationOptions.isFavorite
         ? 'favorite'
         : 'recent',
+      mode: personalizationOptions.isLive ? 'production' : 'development',
       favorite: {
         ...(favoriteInfo || {}),
         name: personalizationOptions.name,

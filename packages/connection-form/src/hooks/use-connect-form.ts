@@ -76,6 +76,7 @@ export type ConnectionPersonalizationOptions = {
   color?: string;
   isFavorite: boolean;
   isNameDirty: boolean;
+  isLive: boolean;
 };
 
 export interface ConnectFormState {

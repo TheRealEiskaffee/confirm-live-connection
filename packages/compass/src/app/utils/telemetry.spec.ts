@@ -12,6 +12,7 @@ const connectionInfo: ConnectionInfo = {
     color: 'color_2',
   },
   savedConnectionType: 'recent',
+  mode: 'development',
 };
 
 describe('connection tracking', function () {
