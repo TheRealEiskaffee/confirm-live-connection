@@ -131,6 +131,11 @@ export interface ConnectionInfo {
   savedConnectionType?: 'favorite' | 'recent';
 
   /**
+   * This is the connection mode. To check if a connection is prod or dev.
+   */
+  mode?: 'production' | 'development';
+
+  /**
    * The options used to connect
    */
   connectionOptions: ConnectionOptions;

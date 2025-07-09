@@ -144,6 +144,7 @@ interface UpdateConnectionPersonalizationAction {
   name: string;
   color?: string;
   isFavorite: boolean;
+  isLive: boolean;
   isNameDirty: boolean;
 }
 
@@ -275,6 +276,7 @@ function buildStateFromConnectionInfo(
       name: initialConnectionInfo.favorite?.name || '',
       isNameDirty: !!initialConnectionInfo.favorite?.name,
       isFavorite: initialConnectionInfo.savedConnectionType === 'favorite',
+      isLive: initialConnectionInfo.mode === 'production',
     },
   };
 }
@@ -362,11 +364,13 @@ export function handleConnectionFormUpdateForPersonalization(
   const name = action.name !== undefined ? action.name : personalization.name;
   const color = action.color || personalization.color;
   const isFavorite = action.isFavorite;
+  const isLive = action.isLive;
 
   return {
     name,
     color,
     isFavorite,
+    isLive,
     isNameDirty,
   };
 }
