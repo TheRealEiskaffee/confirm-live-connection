@@ -438,7 +438,7 @@ function ConnectionForm({
       savedConnectionType: personalizationOptions.isFavorite
         ? 'favorite'
         : 'recent',
-      mode: personalizationOptions.isLive ? 'production' : 'development',
+      isLive: personalizationOptions.isLive,
       favorite: {
         ...(favoriteInfo || {}),
         name: personalizationOptions.name,

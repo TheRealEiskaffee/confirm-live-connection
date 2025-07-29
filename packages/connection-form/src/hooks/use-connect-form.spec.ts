@@ -109,6 +109,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -152,6 +153,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -197,6 +199,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -238,6 +241,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -277,6 +281,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -319,6 +324,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -368,6 +374,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -412,6 +419,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -456,6 +464,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -498,6 +507,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -546,6 +556,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -594,6 +605,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -643,6 +655,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -694,6 +707,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -741,6 +755,7 @@ describe('use-connect-form hook', function () {
               name: 'does not matter',
               color: 'color1',
               isFavorite: false,
+              isLive: false,
               isNameDirty: false,
             }
           );
@@ -794,6 +809,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -821,6 +837,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -847,6 +864,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -879,6 +897,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -907,6 +926,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -940,6 +960,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -964,6 +985,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -990,6 +1012,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -1016,6 +1039,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );
@@ -1042,6 +1066,7 @@ describe('use-connect-form hook', function () {
             name: 'does not matter',
             color: 'color1',
             isFavorite: false,
+            isLive: false,
             isNameDirty: false,
           }
         );

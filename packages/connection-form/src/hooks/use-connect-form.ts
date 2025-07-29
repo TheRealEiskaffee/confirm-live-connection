@@ -276,7 +276,7 @@ function buildStateFromConnectionInfo(
       name: initialConnectionInfo.favorite?.name || '',
       isNameDirty: !!initialConnectionInfo.favorite?.name,
       isFavorite: initialConnectionInfo.savedConnectionType === 'favorite',
-      isLive: initialConnectionInfo.mode === 'production',
+      isLive: initialConnectionInfo?.isLive || false,
     },
   };
 }
