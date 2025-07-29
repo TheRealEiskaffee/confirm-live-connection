@@ -199,7 +199,7 @@ const personalizationSectionLayoutStyles = css({
   gridTemplateAreas: `
     'name-input color-input'
     'favorite-marker favorite-marker'
-    'live-marker live-marker'
+    'required-confirmation-marker required-confirmation-marker'
   `,
   gap: spacing[600],
   marginBottom: spacing[600],
@@ -217,8 +217,8 @@ const personalizationFavoriteMarkerStyles = css({
   gridArea: 'favorite-marker',
 });
 
-const personalizationLiveMarkerStyles = css({
-  gridArea: 'live-marker',
+const personalizationRequiredConfirmationMarkerStyles = css({
+  gridArea: 'required-confirmation-marker',
 });
 
 type ConnectionPersonalizationFormProps = {
@@ -327,12 +327,12 @@ function ConnectionPersonalizationForm({
         />
       )}
       <Checkbox
-        className={personalizationLiveMarkerStyles}
+        className={personalizationRequiredConfirmationMarkerStyles}
         onChange={onChangeLiveMode}
-        data-testid="personalization-favorite-checkbox"
+        data-testid="required-confirmation-checkbox"
         checked={personalizationOptions.isLive}
-        label={<b>LIVE Mode</b>}
-        description='Mark a connection as "Live Mode" to confirm every access.'
+        label={<b>Require confirmation to connect</b>}
+        description="Requiring confirmation is recommended for production connections."
       />
     </div>
   );
