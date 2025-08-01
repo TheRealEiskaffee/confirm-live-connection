@@ -133,7 +133,7 @@ export interface ConnectionInfo {
   /**
    * This is the connection mode. To check if a connection is prod or dev.
    */
-  isLive?: boolean;
+  requiredConfirmation?: boolean;
 
   /**
    * The options used to connect

@@ -65,6 +65,8 @@ export const ConnectionFormConnectionColor =
   '[data-testid="personalization-color-input"]';
 export const ConnectionFormFavoriteCheckbox =
   '[data-testid="personalization-favorite-checkbox"]';
+export const ConnectionRequiredConfirmationCheckbox =
+  '[data-testid="required-confirmation-checkbox"]';
 export const ConnectionFormConnectButton = '[data-testid="connect-button"]';
 export const ConnectionFormSaveAndConnectButton =
   '[data-testid="save-and-connect-button"]';

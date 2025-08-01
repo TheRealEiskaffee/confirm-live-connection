@@ -266,12 +266,12 @@ function ConnectionPersonalizationForm({
     [updateConnectionFormField, personalizationOptions]
   );
 
-  const onChangeLiveMode = useCallback(
+  const onChangeConfirmation = useCallback(
     (ev: React.ChangeEvent<HTMLInputElement>) => {
       updateConnectionFormField({
         type: 'update-connection-personalization',
         ...personalizationOptions,
-        isLive: ev.target.checked,
+        requiredConfirmation: ev.target.checked,
       });
     },
     [updateConnectionFormField, personalizationOptions]
@@ -328,9 +328,9 @@ function ConnectionPersonalizationForm({
       )}
       <Checkbox
         className={personalizationRequiredConfirmationMarkerStyles}
-        onChange={onChangeLiveMode}
+        onChange={onChangeConfirmation}
         data-testid="required-confirmation-checkbox"
-        checked={personalizationOptions.isLive}
+        checked={personalizationOptions.requiredConfirmation}
         label={<b>Require confirmation to connect</b>}
         description="Requiring confirmation is recommended for production connections."
       />
@@ -438,7 +438,7 @@ function ConnectionForm({
       savedConnectionType: personalizationOptions.isFavorite
         ? 'favorite'
         : 'recent',
-      isLive: personalizationOptions.isLive,
+      requiredConfirmation: personalizationOptions.requiredConfirmation,
       favorite: {
         ...(favoriteInfo || {}),
         name: personalizationOptions.name,
